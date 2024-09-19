@@ -1,10 +1,5 @@
 <?php 
 session_start(); 
-$rol = $_SESSION['rol']; 
-if ($rol !== 'admin') {
-    header('Location: index.php'); 
-    exit; 
-}
 require_once 'inc/header.php';
 require_once 'inc/sidebar.php';
 require_once '../Controller/kullaniciFaturaController.php';
